@@ -3,10 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup Form</title>
     <link rel="stylesheet" href="assets/css/log.css">
-    <link rel="stylesheet" href="SignUp_LogIn_Form.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <style type="text/css" id="operaUserStyle"></style></head>
   <body>
+
+<div class="screen">
       <div class="container">
           <div class="form-box login">
               <form action="#">
@@ -22,7 +23,7 @@
                   <div class="forgot-link">
                       <a href="#">Forgot Password?</a>
                   </div>
-                  <button type="submit" class="btn">Login</button>
+                  <button type="submit" class="btn"><a href="home.php">Login</a></button>
                   <p>or login with social platforms</p>
                   <div class="social-icons">
                       <a href="#"><i class="bx bxl-google"></i></a>
@@ -73,8 +74,8 @@
               </div>
           </div>
       </div>
+      </div>
 
       <script src="assets/js/log.js"></script>
   
-</body>
-</html>
+</body></html>

@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/css/header.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
-
-    <title>Sidebar</title>
   </head>
   <body>
-    <div class="container">
+    <header>
       <div class="sidebar">
         <div class="menu-btn">
           <i class="ph-bold ph-caret-left"></i>
@@ -39,7 +36,7 @@
               <li>
                 <a href="#">
                   <i class="icon ph-bold ph-user"></i>
-                  <span class="text">Audience</span>
+                  <span class="text">Perfil</span>
                   <i class="arrow ph-bold ph-caret-down"></i>
                 </a>
                 <ul class="sub-menu">
@@ -64,7 +61,7 @@
               <li>
                 <a href="#">
                   <i class="icon ph-bold ph-calendar-blank"></i>
-                  <span class="text">Schedules</span>
+                  <span class="text">Agendamentos</span>
                 </a>
               </li>
               <li>
@@ -128,14 +125,7 @@
           </ul>
         </div>
       </div>
-      <div class="credits">
-        <h1>
-          Fully Responsive <br />
-          Sidebar by OSC
-        </h1>
-      </div>
-    </div>
-
+</header>
     <!-- Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
