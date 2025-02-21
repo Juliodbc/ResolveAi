@@ -28,7 +28,7 @@
             <p class="title">Main</p>
             <ul>
               <li>
-                <a href="#">
+                <a href="home.php">
                   <i class="icon ph-bold ph-house-simple"></i>
                   <span class="text">Dashboard</span>
                 </a>
@@ -41,8 +41,8 @@
                 </a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="#">
-                      <span class="text">Users</span>
+                    <a href="perfil.php">
+                      <span class="text">User</span>
                     </a>
                   </li>
                   <li>
@@ -53,9 +53,9 @@
                 </ul>
               </li>
               <li class="active">
-                <a href="#">
+                <a href="">
                   <i class="icon ph-bold ph-file-text"></i>
-                  <span class="text">Posts</span>
+                  <span class="text">Mensagens</span>
                 </a>
               </li>
               <li>
