@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -12,7 +11,10 @@
 </head>
 
 <body>
-<?php include('header.php'); ?> 
+<?php 
+include('sidebar.php');
+
+?>
 <div>
         <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     </div class="theme">
@@ -21,6 +23,7 @@
             document.body.classList.toggle('dark-mode');
         }
     </script>
+
 </body>
 
 </html>

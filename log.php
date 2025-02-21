@@ -23,7 +23,7 @@
                   <div class="forgot-link">
                       <a href="#">Forgot Password?</a>
                   </div>
-                  <button type="submit" class="btn"><a href="home.php">Login</a></button>
+                  <button type="submit" class="btn">Login</button>
                   <p>or login with social platforms</p>
                   <div class="social-icons">
                       <a href="#"><i class="bx bxl-google"></i></a>
