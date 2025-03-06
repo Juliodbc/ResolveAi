@@ -16,11 +16,11 @@
         </div>
         <div class="head">
           <div class="user-img">
-            <img src="user.jpg" alt="" />
+            <img src="assets/images/perfil.jpeg" alt="" />
           </div>
           <div class="user-details">
-            <p class="title">web developer</p>
-            <p class="name">John Doe</p>
+            <p class="title">desenvolvedor web</p>
+            <p class="name">Julio Correa</p>
           </div>
         </div>
         <div class="nav">

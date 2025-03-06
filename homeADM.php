@@ -1,4 +1,4 @@
-<?php include('header.php'); ?> 
+<?php include('sidebar.php'); ?> 
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -16,11 +16,12 @@
 <div>
         <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     </div class="theme">
+    
+</body>
+
     <script>
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
         }
     </script>
-</body>
-
 </html>
