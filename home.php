@@ -8,13 +8,14 @@
     <title>Resolve Aí </title>
     <!DOCTYPE html>
     <html lang="en">
+<?php 
+include('sidebar.php');
+?>
 </head>
 
 <body>
-<?php 
-include('sidebar.php');
 
-?>
+
 <div>
         <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     </div class="theme">
