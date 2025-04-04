@@ -10,6 +10,7 @@
     <html lang="en">
 <?php 
 include('sidebar.php');
+include('footer.php');
 ?>
 </head>
 

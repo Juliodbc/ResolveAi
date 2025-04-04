@@ -5,45 +5,38 @@
 
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Compromissos</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/index.css">
+     <link rel="icon" href="assets/images/favicon.png" type="image/png">
+     <title>Ínicio</title>
 </head>
+
 <body>
-    <h2>Agendamentos</h2>
-    <table border="1">
-        <tr>
-            <th>Nome</th>
-            <th>Data</th>
-            <th>Hora</th>
-            <th>Descrição</th>
-        </tr>
-        <?php foreach ($agendamentos as $agenda): ?>
-            <tr>
-                <td><?= htmlspecialchars($agenda['nome']) ?></td>
-                <td><?= date("d/m/Y", strtotime($agenda['data'])) ?></td>
-                <td><?= date("H:i", strtotime($agenda['hora'])) ?></td>
-                <td><?= htmlspecialchars($agenda['descricao']) ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+     <div class="screen">
 
-    <h2>Adicionar Agendamento</h2>
-    <form action="add.php" method="post">
-        <label>Nome:</label><br>
-        <input type="text" name="nome" required><br>
+          <div class="image">
 
-        <label>Data:</label><br>
-        <input type="date" name="data" required><br>
+               <h1>sla</h1>
 
-        <label>Hora:</label><br>
-        <input type="time" name="hora" required><br>
+          </div>
 
-        <label>Descrição:</label><br>
-        <textarea name="descricao"></textarea><br>
+          <div class="slogan">
+               <h1>O melhor lugar para você se conectar com o mundo</h1>
+          </div>
 
-        <button type="submit">Salvar</button>
-    </form>
+          <div class="escrita">
+               <h1>O melhor lugar para você se conectar com o mundo</h1>
+          </div>
+
+          <div class="propagandas">
+               <h1>O melhor lugar para você se conectar com o mundo</h1>
+          </div>
+
+     </div>
+
 </body>
+
 </html>
