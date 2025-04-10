@@ -53,13 +53,13 @@
                 </ul>
               </li>
               <li class="active">
-                <a href="">
+                <a href="mensagens.html">
                   <i class="icon ph-bold ph-file-text"></i>
                   <span class="text">Mensagens</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="calendario.php">
                   <i class="icon ph-bold ph-calendar-blank"></i>
                   <span class="text">Agendamentos</span>
                 </a>

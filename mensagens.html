@@ -4,120 +4,11 @@
   <meta charset="UTF-8">
   <title>Conversa - Estilo Teams</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-color: #007BFF;
-      --background-color: white;
-      --neutral-color: #F4F4F4;
-      --text-color: #343A40;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      display: flex;
-      height: 100vh;
-      background-color: var(--background-color);
-      color: var(--text-color);
-    }
-
-    .sidebar {
-      width: 70px;
-      background-color: var(--primary-color);
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .sidebar .avatar {
-      width: 40px;
-      height: 40px;
-      background-color: var(--neutral-color);
-      border-radius: 50%;
-    }
-
-    .chat-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      background-color: var(--background-color);
-    }
-
-    .chat-header {
-      padding: 1rem;
-      background-color: var(--neutral-color);
-      border-bottom: 1px solid #ccc;
-      font-weight: 600;
-    }
-
-    .chat-body {
-      flex: 1;
-      padding: 1rem;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .message {
-      max-width: 60%;
-      padding: 0.75rem 1rem;
-      border-radius: 20px;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
-    .received {
-      background-color: var(--neutral-color);
-      align-self: flex-start;
-    }
-
-    .sent {
-      background-color: var(--primary-color);
-      color: white;
-      align-self: flex-end;
-    }
-
-    .chat-footer {
-      padding: 1rem;
-      border-top: 1px solid #ccc;
-      background-color: var(--background-color);
-      display: flex;
-      gap: 1rem;
-    }
-
-    .chat-footer input {
-      flex: 1;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      outline: none;
-      color: var(--text-color);
-    }
-
-    .chat-footer button {
-      padding: 0.75rem 1.25rem;
-      background-color: var(--primary-color);
-      color: white;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    .chat-footer button:hover {
-      background-color: #0069d9;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/mensagens.css">
+  
 </head>
 <body>
-  <div class="sidebar">
+  <div class="contatos">
     <div class="avatar"></div>
     <div class="avatar"></div>
     <div class="avatar"></div>
@@ -125,7 +16,7 @@
 
   <div class="chat-container">
     <div class="chat-header">
-      Conversa com João Silva
+      Mjc Autopeças
     </div>
 
     <div class="chat-body" id="chatBody">
@@ -139,30 +30,6 @@
     </div>
   </div>
 
-  <script>
-    const sendButton = document.getElementById('sendButton');
-    const messageInput = document.getElementById('messageInput');
-    const chatBody = document.getElementById('chatBody');
-
-    sendButton.addEventListener('click', () => {
-      const text = messageInput.value.trim();
-
-      if (text !== '') {
-        const newMessage = document.createElement('div');
-        newMessage.classList.add('message', 'sent');
-        newMessage.textContent = text;
-        chatBody.appendChild(newMessage);
-
-        messageInput.value = '';
-        chatBody.scrollTop = chatBody.scrollHeight;
-      }
-    });
-
-    messageInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        sendButton.click();
-      }
-    });
-  </script>
+  <script src="assets/js/mensagens.js"></script>
 </body>
 </html>

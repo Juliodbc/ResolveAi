@@ -16,7 +16,6 @@ include('footer.php');
 
 <body>
 
-
 <div>
         <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     </div class="theme">
