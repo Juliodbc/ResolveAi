@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Serviços Autônomos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #343541;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: #40414f;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: min(800px, 100%);
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #007BFF;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #bbb;
+      font-size: 16px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      color: #000;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border: 2px solid #007BFF;
+      box-shadow: 0 0 10px rgba(0, 142, 207, 0.25);
+    }
+
+  .button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+    
+
+    button {
+      padding: 14px 24px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cancel-btn {
+      background: #ff4d4d;
+      color: #fff;
+    }
+
+    .cancel-btn:hover {
+      background: #e60000;
+    }
+
+    .submit-btn {
+      background: #00c3ff;
+      color: #000;
+    }
+
+    .submit-btn:hover {
+      background: #00a0d1;
+    }
+
+    @media (max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📌 Cadastro de Serviços Autônomos</h2>
+    <form id="serviceForm">
+      <div class="form-group">
+        <label for="title">Título do Serviço *</label>
+        <input type="text" id="title" required placeholder="Ex: Design de Logotipo Profissional">
+      </div>
+      <div class="form-group">
+        <label for="category">Categoria do serviço *</label>
+        <select id="category" required>
+            <option value="">Selecione uma categoria...</option>
+          
+            <optgroup label="🎨 Criação e Design">
+              <option value="design_grafico">Design Gráfico</option>
+              <option value="logotipo">Criação de Logotipo</option>
+              <option value="identidade_visual">Identidade Visual</option>
+              <option value="edicao_imagem">Edição de Imagens</option>
+              <option value="apresentacoes">Design de Apresentações</option>
+              <option value="embalagens">Design de Embalagens</option>
+            </optgroup>
+          
+            <optgroup label="💻 Tecnologia e Programação">
+              <option value="dev_web">Desenvolvimento Web</option>
+              <option value="dev_app">Desenvolvimento de Apps</option>
+              <option value="suporte_tecnico">Suporte Técnico</option>
+              <option value="manutencao_pc">Manutenção de Computadores</option>
+              <option value="instalacao_redes">Instalação de Redes</option>
+              <option value="scripts">Programação e Scripts</option>
+            </optgroup>
+          
+            <optgroup label="📣 Marketing e Vendas">
+              <option value="marketing_digital">Marketing Digital</option>
+              <option value="social_media">Gestão de Redes Sociais</option>
+              <option value="trafego_pago">Tráfego Pago</option>
+              <option value="copywriting">Copywriting</option>
+              <option value="email_marketing">E-mail Marketing</option>
+              <option value="funil_vendas">Funis de Vendas</option>
+            </optgroup>
+          
+            <optgroup label="✍️ Escrita e Tradução">
+              <option value="redacao">Redação de Textos</option>
+              <option value="revisao">Revisão e Correção</option>
+              <option value="traducao">Tradução</option>
+              <option value="escrita_criativa">Escrita Criativa</option>
+              <option value="conteudo_blogs">Conteúdo para Blogs</option>
+            </optgroup>
+          
+            <optgroup label="🎵 Música e Áudio">
+              <option value="producao_musical">Produção Musical</option>
+              <option value="locucao">Locução</option>
+              <option value="edicao_audio">Edição de Áudio</option>
+              <option value="jingles">Criação de Jingles</option>
+              <option value="mixagem">Mixagem e Masterização</option>
+            </optgroup>
+          
+            <optgroup label="🎥 Vídeo e Animação">
+              <option value="edicao_video">Edição de Vídeo</option>
+              <option value="animacoes">Animações 2D/3D</option>
+              <option value="motion_graphics">Motion Graphics</option>
+              <option value="video_youtube">Vídeos para YouTube</option>
+              <option value="vinhetas">Vinhetas e Intros</option>
+            </optgroup>
+          
+            <optgroup label="🛠 Serviços Locais">
+              <option value="pintura">Pintura</option>
+              <option value="eletricista">Eletricista</option>
+              <option value="encanador">Encanador</option>
+              <option value="montador">Montador de Móveis</option>
+              <option value="limpeza">Limpeza Residencial</option>
+              <option value="jardinagem">Jardinagem</option>
+            </optgroup>
+          
+            <optgroup label="📚 Aulas e Consultorias">
+              <option value="aulas_particulares">Aulas Particulares</option>
+              <option value="reforco_escolar">Reforço Escolar</option>
+              <option value="aulas_musica">Aulas de Música</option>
+              <option value="consultoria_financeira">Consultoria Financeira</option>
+              <option value="consultoria_negocios">Consultoria de Negócios</option>
+              <option value="mentoria">Mentoria de Carreira</option>
+            </optgroup>
+          
+            <optgroup label="💆 Saúde e Bem-Estar">
+              <option value="personal_trainer">Personal Trainer</option>
+              <option value="massoterapia">Massoterapia</option>
+              <option value="nutricionista">Nutricionista</option>
+              <option value="psicologo">Psicólogo Online</option>
+              <option value="yoga">Yoga e Meditação</option>
+            </optgroup>
+          
+            <optgroup label="🧾 Serviços Administrativos">
+              <option value="assistente_virtual">Assistente Virtual</option>
+              <option value="atendimento">Atendimento ao Cliente</option>
+              <option value="dados">Entrada de Dados</option>
+              <option value="planejamento_financeiro">Planejamento Financeiro</option>
+              <option value="organizacao_agenda">Organização de Agenda</option>
+            </optgroup>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Descrição *</label>
+        <textarea id="description" rows="4" required placeholder="Descreva detalhadamente o serviço que você oferece..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Preço (R$) *</label>
+        <input type="number" id="price" required min="0" placeholder="R$ 0,00">
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">URL da Imagem (opcional)</label>
+        <input type="url" id="imageUrl" placeholder="https://example.com/image.jpg">
+      </div>
+      <div class="form-group">
+        <label for="tags">Tags (opcional)</label>
+        <input type="text" id="tags" placeholder="Ex: design, logo, criativo">
+      </div>
+      <div class="form-group">
+        <label for="contact">Informações de Contato (opcional)</label>
+        <textarea id="contact" rows="2" placeholder="Adicione informações de contato adicionais..."></textarea>
+      </div>
+      <div class="button-group">
+        <button type="button" class="cancel-btn">Cancelar</button>
+        <button type="submit" class="submit-btn">Cadastrar Serviço</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("serviceForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Serviço cadastrado com sucesso!");
+    });
+  </script>
+</body>
+</html>
